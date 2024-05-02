@@ -30,7 +30,7 @@ jobs:
       - name: Run terraform script
         run: | 
           pwd 
-          terraform inti
+          terraform init
           terraform validate
           terraform apply
           
