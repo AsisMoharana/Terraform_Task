@@ -28,4 +28,9 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run terraform script
-        run: main.tf    
+        run: | 
+          pwd 
+          terraform inti
+          terraform validate
+          terraform apply
+          
