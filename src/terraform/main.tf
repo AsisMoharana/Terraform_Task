@@ -10,7 +10,7 @@ resource "aws_s3_bucket" "s3_bucket" {
   bucket = "test-s3-buckets-2024"
   acl   = "private"
 
-  versioning = {
+  versioning {
     enabled = true
   }
 
