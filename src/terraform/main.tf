@@ -9,7 +9,7 @@ versioning = {
 }
 
 resource "aws_s3_bucket" "example" {
-  bucket = "my-tf-test-bucket1996rg"
+  bucket = "test-buckets-2024"
 
   tags = {
     Name        = "My bucket"
