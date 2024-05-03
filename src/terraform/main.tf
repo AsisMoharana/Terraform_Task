@@ -4,12 +4,15 @@ provider "aws" {
   secret_key = "Zdtc9bmBBwe92vg75E5eITtMcz6YSA+5jTsUeC8v"
 }
 
-versioning = {
-    enabled = true
-}
+
 
 resource "aws_s3_bucket" "s3_bucket" {
   bucket = "test-s3-buckets-2024"
+  acl   = "private"
+
+  versioning = {
+    enabled = true
+  }
 
   tags = {
     Name        = "My bucket"
