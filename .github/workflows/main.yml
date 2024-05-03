@@ -28,7 +28,8 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run terraform script
-        run: | 
+        run: |
+          cd src/terraform/ 
           pwd 
           terraform init
           terraform validate
